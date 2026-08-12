@@ -14,18 +14,39 @@
         <p>Meu primeiro blog </p>
     </header>
     <main>
-        <img src="tech.png" alt="Uma imagem digital que retrata um cenário futurista e tecnológico. No centro, uma jovem mulher negra trabalha concentrada em seu escritório doméstico de alta tecnologia à noite, interagindo com uma tela flutuante holográfica e translúcida. Ao fundo, através de uma grande janela de vidro, avista-se uma metrópole moderna iluminada com tráfego aéreo de drones.">
-        
-    <div> 
-        <h2>Meu primeiro Post</h2>
-        <p class="autor">Por: Ailine Rodrigues</p>
-        <p>Meu primeiro post sobre tecnologia</p>
-    </div>
+        <img src="tech.png"
+            alt="Uma imagem digital que retrata um cenário futurista e tecnológico. No centro, uma jovem mulher negra trabalha concentrada em seu escritório doméstico de alta tecnologia à noite, interagindo com uma tela flutuante holográfica e translúcida. Ao fundo, através de uma grande janela de vidro, avista-se uma metrópole moderna iluminada com tráfego aéreo de drones.">
+
+        <div>
+            <h2>Meu primeiro Post</h2>
+            <p class="autor">Por: Ailine Rodrigues</p>
+            <p>Meu primeiro post sobre tecnologia</p>
+            <button>😁<span>0</span></button>
+            <button>🥰<sapan>0</sapan></button>
+        </div>
 
     </main>
     <footer>
         <p>Por: Aline Rodrigues</p>
     </footer>
 </body>
+<script>
+    const botoes = document.querySelectorAll("button");
+
+    botoes.forEach(fuction(botao) {
+        let curtiu = false;
+        botao.addEventListener("click", botaoClicado);
+        function botaoClicado(){
+            let texto = botao.querySelector("span");
+            if(curtiu === false){
+        texto.textContent++;
+        curtiu = true;
+    }else {
+        texto.textContent--;
+        curtiu = false;
+    }
+     } 
+    })
+</script>
 
 </html>
