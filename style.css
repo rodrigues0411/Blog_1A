@@ -16,6 +16,7 @@ main{
     margin: 0 auto; 
     border: 5px solid #39c4eb;
     padding: 15px;
+    display: flex;
 }
 
 footer{
@@ -30,3 +31,7 @@ footer{
     font-weight: bold;
 }
 
+img{
+    height: 10%;
+    width: 10%;
+}
